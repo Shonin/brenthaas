@@ -39,3 +39,15 @@ body {
 .current {
 	width: 400px;
 }
+
+.renegade {
+	text-align: center;
+}
+
+.renegade img {
+	margin-top: 10px;
+}
+
+.renegade a {
+	color: white;
+}
