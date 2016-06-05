@@ -3,11 +3,23 @@
 }
 .main {
 	padding-left: 100px;
+	margin: 3% auto;
+  	max-width: 1200px;
 }
 .projects {
 	padding-left: 50px;
 	max-width: 1100px;
 	margin: 20px auto;
+}
+.head-right {
+	display: inline;
+	float: right;
+	width: 33%;
+}
+.head-left {
+	display: inline;
+	float: left;
+	width: 66%;
 }
 @media(max-width : 1080px) {
 	.projects {
@@ -34,20 +46,25 @@
 	.projects>a:nth-child(10) .project-link{
 		margin-left: 60px;
 	}
-	/*.projects>a:nth-child(3) .project-link{
-		margin-left: 60px;
-	}
-	.projects>a:nth-child(7) .project-link{
-		margin-left: 60px;
-	}
-	.projects>a:nth-child(11) .project-link{
-		margin-left: 60px;
-	}*/
 }
 @media(max-width: 830px) {
 	.projects {
 		/*padding-left: 70px;*/
 		max-width: 700px;
+	}
+	.head-right {
+		float: none;
+		display: block;
+		text-align: center;
+		width: 80%;
+	}
+	.head-left {
+		float: none;
+		display: block;
+		width: 80%;
+	}
+	.main {
+		margin: 0 auto;
 	}
 	.projects>a:nth-child(n) .project-link{
 		margin-left: 0px;
@@ -76,8 +93,6 @@
 	
 }
 
-
-
 /*@media only screen and (min-width : 620px) {
 	.projects>a:nth-child(4n + 1) .project-link{
 		margin-left: 90px;
@@ -97,10 +112,7 @@ body {
 .home-container {
 	/*padding-left: 80px;*/
 }
-.main {
-  margin: 3% auto;
-  max-width: 1200px;
-}
+
 .site-title {
 	display: inline-block;
 	margin-bottom: 0px;
