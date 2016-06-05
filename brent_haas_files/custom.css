@@ -3,6 +3,9 @@ body {
   background-color: #1B191A;
   color: #D6CEBA;
 }
+.home-container {
+	padding-left: 30px;
+}
 .main {
   padding: 40px 15px;
 }
@@ -21,6 +24,7 @@ body {
 }
 
 .project-link {
+	margin-top: 40px;
 	width: 220px;
 	height: 40px;
 	background: url('tab.png');
@@ -50,11 +54,11 @@ body {
 
 }
 .project-row-2 {
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 	margin-left: 90px;
 }
 .project-row-3 {
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .footer {
