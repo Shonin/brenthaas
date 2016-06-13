@@ -17,6 +17,14 @@ body {
   background-color: #1B191A;
   color: #D6CEBA;
 }
+a {
+  color: #D6CEBA;
+  text-decoration: none;
+}
+a:hover {
+  color: #D6CEBA;
+  text-decoration: none;
+}
 .projects>a:nth-child(5) .project-link-past{
 	margin-left: 90px;
 }
@@ -31,12 +39,12 @@ body {
 	margin: 20px auto;
 }
 .head-right {
-	display: inline;
+	/*display: inline;*/
 	float: right;
 	width: 33%;
 }
 .head-left {
-	display: inline;
+	/*display: inline;*/
 	float: left;
 	width: 66%;
 }
@@ -171,8 +179,12 @@ body {
 	display: none;
 }
 .project-link-past:hover .past-logo {
-	padding-top: 10px;
-	height:30px;
+	/*padding-top: 10px;*/
+	position: relative;
+	right: 0px;
+	top: 7px;
+	
+	height:20px;
 	display: inline-block;
 	overflow: hidden
 }
@@ -229,6 +241,7 @@ body {
 	width: 220px;
 	height: 40px;
 	background: url('tab-red-hover.png');
+	/*background: url('tab_hover.png');*/
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
@@ -253,7 +266,7 @@ body {
 	/*margin: 50px 200px;*/
 	text-align: right;
 	max-width: 1000px;
-	margin: 80px auto;
+	margin: 140px auto;
 }
 .footer a {
 	text-decoration: none;
