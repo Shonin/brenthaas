@@ -9,7 +9,10 @@
 
 
 
-
+.flip {
+	position: relative; 
+	top: 25px;
+}
 
 
 body {
