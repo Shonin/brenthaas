@@ -180,20 +180,14 @@ a:hover {
 	margin-top: 40px;
 	width: 220px;
 	height: 40px;
-	background: url('tab.png');
+	/*background: url('tab.png');*/
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 	display: inline-block;
 	text-align: right;
 	/*overflow: hidden;*/
 }
-/*.project-link-past:hover {*/
-/*	width: 220px;*/
-/*	height: 40px;*/
-/*	background: url('tab_hover.png');*/
-/*	background-size: 100% auto;*/
-/*	background-repeat: no-repeat;*/
-/*}*/
+
 .project-link-past p {
   	color: #D6CEBA;
   	text-transform: uppercase;
@@ -203,30 +197,53 @@ a:hover {
 	top: 12px;
 	right: 18px;
 }
-/*.project-link-past:hover p {*/
-/*	color: #1B191A;*/
-/*}*/
-/*========================
-     CURRENT PROJECT
-========================*/
-.project-link-current {
-	margin-top: 40px;
+
+#tab-front {
 	width: 220px;
 	height: 40px;
 	background: url('tab.png');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
-	display: inline-block;
-	text-align: right;
 }
-.project-link-current:hover {
+
+#tab-back {
 	width: 220px;
 	height: 40px;
-	background: url('tab-red-hover.png');
-	/*background: url('tab_hover.png');*/
+	background: url('tab_hover.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	color: #1B191A;
+}
+
+#tab-back > p {
+	color: #1B191A;
+}
+
+
+
+/*========================
+     CURRENT PROJECT
+========================*/
+.project-link-current {
+	width: 220px;
+	height: 40px;
+	display: inline-block;
+	text-align: right;
+	/*background: url('tab.png');*/
 	background-size: 100% auto;
 	background-repeat: no-repeat;
 }
+
+/*.project-link-current:hover {*/
+/*	width: 220px;*/
+/*	height: 40px;*/
+/*	display: inline-block;*/
+/*	text-align: right;*/
+/*	background: url('tab_hover.png');*/
+/*	background-size: 100% auto;*/
+/*	background-repeat: no-repeat;*/
+/*}*/
+
 .project-link-current p {
   	color: #6766FF;
   	text-transform: uppercase;
@@ -236,10 +253,6 @@ a:hover {
 	top: 17px;
 	right: 7px;
 }
-.project-link-current:hover p {
-	color: #1B191A;
-}
-
 
 /*========================
      FOOTER
