@@ -2,10 +2,10 @@
 
 $(document).ready(function() {
     
-    $("#card1").flip({axis: 'x'});
-    $("#card2").flip({axis: 'x'});
-    $("#card3").flip({axis: 'x'});
-    $("#card4").flip({axis: 'x'});
+    $("#card1").flip({axis: 'x', speed: '600'});
+    $("#card2").flip({axis: 'x', speed: '600'});
+    $("#card3").flip({axis: 'x', speed: '600'});
+    $("#card4").flip({axis: 'x', speed: '600'});
     
     $(".project-link-past > #card1").on("mouseover", function() {
         $("#card1").flip(true);
