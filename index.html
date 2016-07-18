@@ -6,7 +6,15 @@
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
-    <meta name="viewport" content="width=device-width, user-scalable=0">
+    <meta id="vp" name="viewport" content="width=device-width, initial-scale=1">
+    
+    <script>
+			if (screen.width < 530)
+			{
+			    var mvp = document.getElementById('vp');
+			    mvp.setAttribute('content','width=530');
+			}
+		</script>
     
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
     <meta name="description" content="">
