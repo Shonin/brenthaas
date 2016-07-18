@@ -7,14 +7,12 @@
     src: url(brent_haas_files/fonts/HelveticaNeue-Thin.ttf) format("truetype");
 }
 
-html {
-	min-width: 530px;
-}
-
 body {
   padding-top: 60px;
   background-color: #1B191A;
   color: #D6CEBA;
+  min-width: 530px;
+  width: auto !important;
 }
 a {
   color: #D6CEBA;
