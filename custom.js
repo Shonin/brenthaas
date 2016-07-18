@@ -35,5 +35,6 @@ $(document).ready(function() {
     flipTitle("#card9");
     flipTitle("#card10");
     flipTitle("#card11");
+    flipTitle("#card-current")
     
 })
