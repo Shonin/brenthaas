@@ -1,10 +1,14 @@
 @font-face {
     font-family: "Ultra";
-    src: url(brent_haas_files/fonts/HelveticaNeue-UltraLight.ttf) format("truetype");
+    src: url(./fonts/HelveticaNeue-UltraLight.ttf) format("truetype");
 }
 @font-face {
     font-family: "Thin";
-    src: url(brent_haas_files/fonts/HelveticaNeue-Thin.ttf) format("truetype");
+    src: url(./fonts/HelveticaNeue-Thin.ttf) format("truetype");
+}
+@font-face {
+    font-family: "Medium";
+    src: url(./fonts/HelveticaNeue-Medium.ttf) format("truetype");
 }
 
 body {
@@ -37,12 +41,12 @@ a:hover {
 }
 .head-right {
 	float: right;
-	width: 33%;
-	margin-left: 10%;
+	width: 30%;
+	margin-right: 4%;
 }
 .head-left {
 	float: left;
-	width: 56%;
+	width: 58%;
 }
 
 
@@ -51,19 +55,29 @@ a:hover {
 }
 
 .site-title {
+	color: #fff;
 	font-family: "Ultra", Helvetica, sans-serif;
 	display: inline-block;
 	margin-bottom: 0px;
 	text-transform: uppercase;
 	font-weight: 100;
-	letter-spacing: 2px;
+	letter-spacing: 5px;
+	font-size: 30px;
+	margin-top: 40px;
+	transform : scale(1,1.2);
+	-webkit-transform:scale(1,1.2); /* Safari and Chrome */
+	-moz-transform:scale(1,1.2); /* Firefox */
+	-ms-transform:scale(1,1.2); /* IE 9+ */
+	-o-transform:scale(1,1.2); /* Opera */
 }
 .site-description {
 	font-family: "Thin", Helvetica, sans-serif;
-	font-weight: 100;
+	/*font-weight: 100;*/
+	font-size: 16px;
 }
 .site-logo {
-	height: 140px;
+	height: 160px;
+	bottom: 10px;
 }
 
 
@@ -93,10 +107,9 @@ a:hover {
 }
 
 .project-link-past p {
+	font-family: "Medium", Helvetica, sans-serif;
   	color: #D6CEBA;
   	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0px;
 	position: relative;
 	top: 12px;
 	right: 18px;
@@ -117,10 +130,9 @@ a:hover {
 }
 
 .project-link-current p {
+	font-family: "Medium", Helvetica, sans-serif;
   	color: #6766FF;
   	text-transform: uppercase;
-	font-weight: 500;
-	letter-spacing: 0px;
 	position: relative;
 	top: 12px;
 	right: 18px;
@@ -145,6 +157,14 @@ a:hover {
 .footer a {
 	text-decoration: none;
 }
+.about {
+	font-family: "Thin", Helvetica, sans-serif;
+	display:inline; 
+	margin-right: 20px;
+	font-size: 16px;
+	font-weight: 100;
+}
+
 .fa {
 	margin-right: 20px;
 	color: #D6CEBA;
@@ -152,9 +172,10 @@ a:hover {
 .copyright {
 	text-transform: uppercase;
 	font-weight: 200;
-	font-size: 10px;
+	font-size: 8px;
 	position: relative;
-	bottom: 5px;
+	padding-left: 10px;
+	bottom: 4px;
 }
 @media(max-width : 1080px) {
 .footer {
