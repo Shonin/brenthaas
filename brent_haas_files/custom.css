@@ -211,6 +211,9 @@ a:hover {
 	}
 }
 @media(max-width : 991px) {
+	.footer {
+		margin: 100px auto;
+	}
 	.projects>a:nth-child(n) .project-link-past{
 		margin-left: 0px;
 	}
@@ -235,8 +238,7 @@ a:hover {
 		display: block;
 		text-align: center;
 		width: 80%;
-		padding-bottom: 30px;
-		/*padding-left:60px;*/
+		margin: 0px auto;
 	}
 	.head-left {
 		float: none;
