@@ -2,12 +2,12 @@
 
 $(document).ready(function() {
     
-    $(".project-link-past").on("mouseover", function() {
+    $(".tab").on("mouseover", function() {
       $(this).css('background-image', 'url("brent_haas_files/tab_hover.png")');
       $(this).find('p').css('color', '#1B191A');
     });
     
-    $(".project-link-past").on("mouseout", function() {
+    $(".tab").on("mouseout", function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
@@ -16,10 +16,10 @@ $(document).ready(function() {
     
     function flipTitle(card) {
         $(card).flip({axis: 'x', speed: '600'})
-        $(".project-link-past >" + card).on("mouseover", function() {
+        $(".tab >" + card).on("mouseover", function() {
             $(card).flip(true)
         })
-        $(".project-link-past").on("mouseout", function() {
+        $(".tab").on("mouseout", function() {
             $(card).flip(false);
         });
     }

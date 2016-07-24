@@ -26,7 +26,7 @@ a:hover {
   color: #D6CEBA;
   text-decoration: none;
 }
-.projects>a:nth-child(5) .project-link-past{
+.projects>a:nth-child(5) .tab{
 	margin-left: 90px;
 }
 .main {
@@ -67,15 +67,12 @@ a:hover {
 }
 .site-description {
 	font-family: "Thin", Helvetica, sans-serif;
-	/*font-weight: 100;*/
 	font-size: 16px;
 }
 .site-logo {
 	height: 160px;
 	bottom: 10px;
 }
-
-
 
 /*========================
      PAST PROJECTS
@@ -94,7 +91,7 @@ a:hover {
 	height: 16px;
 }
 
-.project-link-past {
+.tab {
 	margin-top: 40px;
 	width: 220px;
 	height: 40px;
@@ -105,7 +102,7 @@ a:hover {
 	text-align: right;
 }
 
-.project-link-past p {
+.tab p {
 	font-family: "Medium", Helvetica, sans-serif;
   	color: #D6CEBA;
   	text-transform: uppercase;
@@ -117,33 +114,33 @@ a:hover {
 /*========================
      CURRENT PROJECT
 ========================*/
-.project-link-current {
-	margin-top: 40px;
-	width: 220px;
-	height: 40px;
-	background: url('tab.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-	display: inline-block;
-	text-align: right;
-}
+/*.project-link-current {*/
+	/*margin-top: 40px;*/
+	/*width: 220px;*/
+	/*height: 40px;*/
+	/*background: url('tab.png');*/
+	/*background-size: 100% auto;*/
+	/*background-repeat: no-repeat;*/
+	/*display: inline-block;*/
+	/*text-align: right;*/
+/*}*/
 
-.project-link-current p {
-	font-family: "Medium", Helvetica, sans-serif;
-  	color: #6766FF;
-  	text-transform: uppercase;
-	position: relative;
-	top: 12px;
-	right: 18px;
-}
-.project-link-current:hover p {
-	color: #1B191A;
-}
-.project-link-current:hover {
-	background: url('tab-red-hover.png');
-	background-size: 100% auto;
-	background-repeat: no-repeat;
-}
+/*.project-link-current p {*/
+	/*font-family: "Medium", Helvetica, sans-serif;*/
+  	/*color: #6766FF;*/
+  	/*text-transform: uppercase;*/
+	/*position: relative;*/
+	/*top: 12px;*/
+	/*right: 18px;*/
+/*}*/
+/*.project-link-current:hover p {*/
+	/*color: #1B191A;*/
+/*}*/
+/*.project-link-current:hover {*/
+	/*background: url('tab-red-hover.png');*/
+	/*background-size: 100% auto;*/
+	/*background-repeat: no-repeat;*/
+/*}*/
 
 /*========================
      FOOTER
@@ -197,13 +194,13 @@ a:hover {
 	.projects {
 		max-width: 900px;
 	}
-	.projects>a:nth-child(n) .project-link-past{
+	.projects>a:nth-child(n) .tab{
 		margin-left: 0px;
 	}
-	.projects>a:nth-child(4) .project-link-past{
+	.projects>a:nth-child(4) .tab{
 		margin-left: 90px;
 	}
-	.projects>a:nth-child(10) .project-link-past{
+	.projects>a:nth-child(10) .tab{
 		margin-left: 90px;
 	}
 }
@@ -211,13 +208,13 @@ a:hover {
 	.footer {
 		margin: 100px auto;
 	}
-	.projects>a:nth-child(n) .project-link-past{
+	.projects>a:nth-child(n) .tab{
 		margin-left: 0px;
 	}
-	.projects>a:nth-child(4) .project-link-past{
+	.projects>a:nth-child(4) .tab{
 		margin-left: 60px;
 	}
-	.projects>a:nth-child(10) .project-link-past{
+	.projects>a:nth-child(10) .tab{
 		margin-left: 60px;
 	}
 }
@@ -250,16 +247,16 @@ a:hover {
 	body {
 		padding-top: 20px;
 	}
-	.projects>a:nth-child(n) .project-link-past{
+	.projects>a:nth-child(n) .tab{
 		margin-left: 0px;
 	}
-	.projects>a:nth-child(3) .project-link-past{
+	.projects>a:nth-child(3) .tab{
 		margin-left: 60px;
 	}
-	.projects>a:nth-child(7) .project-link-past{
+	.projects>a:nth-child(7) .tab{
 		margin-left: 60px;
 	}
-	.projects>a:nth-child(11) .project-link-past{
+	.projects>a:nth-child(11) .tab{
 		margin-left: 60px;
 	}
 }
@@ -273,13 +270,13 @@ a:hover {
 	}
 	
 	/*MAKE TABS SMALLER*/
-	.project-link-past {
+	.tab {
 		margin-top: 40px;
 		width: 170px;
 		height: 30px;
 	}
 	
-	.project-link-past p {
+	.tab p {
 	  	font-size: 10px;
 		font-weight: 500;
 		top: 10px;
