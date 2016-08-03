@@ -26,19 +26,13 @@ a:hover {
   color: #D6CEBA;
   text-decoration: none;
 }
-.projects>a:nth-child(5) .tab{
-	margin-left: 90px;
-}
+
 .main {
 	padding-left: 100px;
 	margin: 3% auto;
   	max-width: 1200px;
 }
-.projects {
-	padding-left: 50px;
-	max-width: 1100px;
-	margin: 20px auto;
-}
+
 .head-right {
 	float: right;
 	width: 30%;
@@ -79,8 +73,8 @@ a:hover {
 ========================*/
 
 .card {
-	height:40px;
-	width:220px;
+	height:50px;
+	width:260px;
 }
 
 .front {
@@ -93,8 +87,8 @@ a:hover {
 
 .tab {
 	margin-top: 40px;
-	width: 220px;
-	height: 40px;
+	width: 260px;
+	height: 50px;
 	background: url('tab.png');
 	background-size: 100% auto;
 	background-repeat: no-repeat;
@@ -107,40 +101,26 @@ a:hover {
   	color: #D6CEBA;
   	text-transform: uppercase;
 	position: relative;
-	top: 12px;
+	top: 17px;
 	right: 18px;
 }
 
 /*========================
-     CURRENT PROJECT
+     Modal
 ========================*/
-/*.project-link-current {*/
-	/*margin-top: 40px;*/
-	/*width: 220px;*/
-	/*height: 40px;*/
-	/*background: url('tab.png');*/
-	/*background-size: 100% auto;*/
-	/*background-repeat: no-repeat;*/
-	/*display: inline-block;*/
-	/*text-align: right;*/
-/*}*/
 
-/*.project-link-current p {*/
-	/*font-family: "Medium", Helvetica, sans-serif;*/
-  	/*color: #6766FF;*/
-  	/*text-transform: uppercase;*/
-	/*position: relative;*/
-	/*top: 12px;*/
-	/*right: 18px;*/
-/*}*/
-/*.project-link-current:hover p {*/
-	/*color: #1B191A;*/
-/*}*/
-/*.project-link-current:hover {*/
-	/*background: url('tab-red-hover.png');*/
-	/*background-size: 100% auto;*/
-	/*background-repeat: no-repeat;*/
-/*}*/
+.modal-content {
+	background-color: #1B191A;
+	/*text-align: center;*/
+	font-family: "Thin", Helvetica, sans-serif;
+	font-size: 16px;
+	padding-left: 5%;
+}
+
+.modal-title {
+	text-align: center;
+}
+
 
 /*========================
      FOOTER
@@ -148,7 +128,7 @@ a:hover {
 .footer {
 	text-align: right;
 	max-width: 1000px;
-	margin: 140px auto;
+	margin: 100px auto;
 }
 .footer a {
 	text-decoration: none;
@@ -160,11 +140,10 @@ a:hover {
 	font-size: 16px;
 	font-weight: 100;
 }
-
-.fa {
-	margin-right: 20px;
-	color: #D6CEBA;
+.mail-icon {
+	cursor: pointer;
 }
+
 .copyright {
 	text-transform: uppercase;
 	font-weight: 200;
@@ -190,9 +169,25 @@ a:hover {
      Stagger Tabs on Mobile
 ==================================*/
 
-@media(max-width : 1080px) {
+.projects {
+	padding-left: 50px;
+	max-width: 1200px;
+	margin: 20px auto;
+}
+
+.projects>a:nth-child(5) .tab{
+	margin-left: 90px;
+}
+
+/*@media(max-width: 1220px) {*/
+	/*.projects {*/
+		/*max-width: 1000px;*/
+	/*}*/
+/*}*/
+
+@media(max-width : 1220px) {
 	.projects {
-		max-width: 900px;
+		max-width: 1000px;
 	}
 	.projects>a:nth-child(n) .tab{
 		margin-left: 0px;
