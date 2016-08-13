@@ -1,19 +1,19 @@
 /* global $ */
 
 $(document).ready(function() {
-    
+
     $(".tab").on("mouseover", function() {
       $(this).css('background-image', 'url("brent_haas_files/tab_hover.png")');
       $(this).find('p').css('color', '#1B191A');
     });
-    
+
     $(".tab").on("mouseout", function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
-    
-    
-    
+
+
+
     function flipTitle(card) {
         $(card).flip({axis: 'x', speed: '600'})
         $(".tab >" + card).on("mouseover", function() {
@@ -28,7 +28,7 @@ $(document).ready(function() {
         });
 
     }
-    
+
     flipTitle("#card1");
     flipTitle("#card2");
     flipTitle("#card3");
@@ -40,34 +40,34 @@ $(document).ready(function() {
     flipTitle("#card9");
     flipTitle("#card10");
     flipTitle("#card11");
-    
 
 
-    $(".tab0").on("mouseover", function() {
-      $(this).css('background-image', 'url("brent_haas_files/tab-red-hover.png")');
+
+    $(".tab1").on("mouseover", function() {
+      $(this).css('background-image', 'url("brent_haas_files/tab-pink-hover.png")');
       $(this).find('p').css('color', '#1B191A');
     });
 
-    $(".tab0").on("mouseout", function() {
+    $(".tab1").on("mouseout", function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
 
     function flipTitle0(card) {
         $(card).flip({axis: 'x', speed: '600'})
-        $(".tab0 >" + card).on("mouseover", function() {
+        $(".tab1 >" + card).on("mouseover", function() {
             $(card).flip(true)
         });
-        $(".tab0").on("mouseout", function() {
+        $(".tab1").on("mouseout", function() {
             $(card).flip(false);
         });
 
-        $(".tab0 >" + card).on("click", function() {
+        $(".tab1 >" + card).on("click", function() {
             $(card).flip(true)
         });
     }
 
     flipTitle0("#card-current");
 
-    
+
 })
