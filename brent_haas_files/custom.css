@@ -105,6 +105,46 @@ a:hover {
 	right: 18px;
 }
 
+.tab0 {
+	margin-top: 40px;
+	width: 260px;
+	height: 50px;
+	background: url('tab-red.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: right;
+}
+
+.tab0 p {
+	font-family: "Medium", Helvetica, sans-serif;
+	color: #CB4228;
+	text-transform: uppercase;
+	position: relative;
+	top: 17px;
+	right: 18px;
+}
+
+.tab1 {
+	margin-top: 40px;
+	width: 260px;
+	height: 50px;
+	background: url('tab-pink.png');
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	display: inline-block;
+	text-align: right;
+}
+
+.tab1 p {
+	font-family: "Medium", Helvetica, sans-serif;
+	color: #d99ed7;
+	text-transform: uppercase;
+	position: relative;
+	top: 17px;
+	right: 18px;
+}
+
 /*========================
      Modal
 ========================*/
