@@ -108,6 +108,10 @@ a:hover {
 /*========================
      Modal
 ========================*/
+.modal-dialog {
+	margin-top: 20%;
+}
+
 
 .modal-content {
 	background-color: #1B191A;
