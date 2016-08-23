@@ -43,26 +43,26 @@ $(document).ready(function() {
     
 
 
-    $(".tab0").on("mouseover", function() {
+    $(".tab-red").on("mouseover", function() {
       $(this).css('background-image', 'url("brent_haas_files/tab-red-hover.png")');
       $(this).find('p').css('color', '#1B191A');
     });
 
-    $(".tab0").on("mouseout", function() {
+    $(".tab-red").on("mouseout", function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
 
     function flipTitle0(card) {
         $(card).flip({axis: 'x', speed: '600'})
-        $(".tab0 >" + card).on("mouseover", function() {
+        $(".tab-red >" + card).on("mouseover", function() {
             $(card).flip(true)
         });
-        $(".tab0").on("mouseout", function() {
+        $(".tab-red").on("mouseout", function() {
             $(card).flip(false);
         });
 
-        $(".tab0 >" + card).on("click", function() {
+        $(".tab-red >" + card).on("click", function() {
             $(card).flip(true)
         });
     }
