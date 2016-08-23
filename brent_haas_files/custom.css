@@ -231,13 +231,13 @@ a:hover {
 		margin-left: 0px;
 	}
 	.projects>a:nth-child(4) .tab{
-		margin-left: 60px;
+		margin-left: 70px;
 	}
 	.projects>a:nth-child(10) .tab{
 		margin-left: 60px;
 	}
 }
-@media(max-width: 830px) {
+@media(max-width: 950px) {
 	.site-title {
 		font-size: 30px;
 	}
@@ -270,17 +270,87 @@ a:hover {
 		margin-left: 0px;
 	}
 	.projects>a:nth-child(3) .tab{
-		margin-left: 60px;
+		margin-left: 80px;
 	}
 	.projects>a:nth-child(7) .tab{
-		margin-left: 60px;
+		margin-left: 80px;
 	}
 	.projects>a:nth-child(11) .tab{
-		margin-left: 60px;
+		margin-left: 80px;
 	}
 }
 
-@media(max-width: 610px) {
+
+@media(max-width: 710px) {
+	.projects {
+		padding-left: 90px;
+	}
+	.site-title {
+		font-size: 24px;
+	}
+	.site-description {
+		font-size: 10px;
+	}
+
+	/*MAKE TABS SMALLER*/
+	.card {
+	height:40px;
+	width:200px;
+	}
+
+	.front {
+		height: 16px;
+	}
+
+	.back {
+		height: 16px;
+	}
+
+
+	.tab, .tab-red {
+		margin-top: 40px;
+		width: 200px;
+		height: 40px;
+	}
+
+	.tab p, .tab-red p {
+	  	font-size: 10px;
+		font-weight: 500;
+		top: 10px;
+		right: 10px;
+	}
+
+	.project-link-current {
+		margin-top: 40px;
+		width: 200px;
+		height: 40px;
+	}
+
+	.project-link-current p {
+	  	font-size: 10px;
+		font-weight: 500;
+		top: 10px;
+		right: 62px;
+	}
+
+	.projects>a:nth-child(n) .tab{
+		margin-left: 0px;
+	}
+	.projects>a:nth-child(3) .tab{
+		margin-left: 80px;
+	}
+	.projects>a:nth-child(7) .tab{
+		margin-left: 80px;
+	}
+	.projects>a:nth-child(11) .tab{
+		margin-left: 80px;
+	}
+
+}
+
+
+
+@media(max-width: 670px) {
 	.site-title {
 		font-size: 24px;
 	}
@@ -289,17 +359,31 @@ a:hover {
 	}
 	
 	/*MAKE TABS SMALLER*/
-	.tab {
+	.card {
+	height:30px;
+	width:170px;
+	}
+
+	.front {
+		height: 16px;
+	}
+
+	.back {
+		height: 16px;
+	}
+
+
+	.tab, .tab-red {
 		margin-top: 40px;
 		width: 170px;
 		height: 30px;
 	}
 	
-	.tab p {
+	.tab p, .tab-red p {
 	  	font-size: 10px;
 		font-weight: 500;
 		top: 10px;
-		right: 62px;
+		right: 10px;
 	}
 	
 	.project-link-current {
@@ -314,7 +398,19 @@ a:hover {
 		top: 10px;
 		right: 62px;
 	}
-	
+
+	.projects>a:nth-child(n) .tab{
+		margin-left: 0px;
+	}
+	.projects>a:nth-child(3) .tab{
+		margin-left: 80px;
+	}
+	.projects>a:nth-child(7) .tab{
+		margin-left: 80px;
+	}
+	.projects>a:nth-child(11) .tab{
+		margin-left: 80px;
+	}
 	
 	
 }
