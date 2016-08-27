@@ -30,7 +30,7 @@ $(document).ready(function() {
 
         $(".tab >" + card).on("click", function() {
             $(card).flip(false)
-        });
+        }, 100);
 
     }
     
@@ -74,7 +74,7 @@ $(document).ready(function() {
 
         $(".tab-red >" + card).on("click", function() {
             $(card).flip(false)
-        });
+        }, 100);
     }
 
     flipTitle0("#card-current");
