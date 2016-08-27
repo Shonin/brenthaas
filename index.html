@@ -8,11 +8,14 @@
     <meta id="vp" name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1,user-scalable=no" />
 
     
-    <script>
+    	<script>
 			if (screen.width < 630)
 			{
 			    var mvp = document.getElementById('vp');
 			    mvp.setAttribute('content','width=630');
+			}
+			function delay(URL) {
+				setTimeout( function() { window.location = URL }, 500 );
 			}
 		</script>
     
@@ -75,7 +78,7 @@
       </div><!-- /.main -->
 
       	<div class="projects">
-	      	<a href="current.html"><div class="tab-red">
+	      	<a href="javascript:delay('current.html')"><div class="tab-red">
 	      		<div class="card" id="card-current">
 			      	<div class="front">
 			      		<p>

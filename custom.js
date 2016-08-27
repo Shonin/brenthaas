@@ -79,5 +79,7 @@ $(document).ready(function() {
 
     flipTitle0("#card-current");
 
+
+    
     
 });
