@@ -11,6 +11,11 @@ $(document).ready(function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
+
+    $(".tab").on("click", function() {
+        $(this).css('background-image', '');
+        $(this).find('p').css('color', '');
+    });
     
     
     
@@ -24,7 +29,7 @@ $(document).ready(function() {
         });
 
         $(".tab >" + card).on("click", function() {
-            $(card).flip(true)
+            $(card).flip(false)
         });
 
     }
@@ -53,6 +58,11 @@ $(document).ready(function() {
         $(this).find('p').css('color', '');
     });
 
+    $(".tab-red").on("click", function() {
+        $(this).css('background-image', '');
+        $(this).find('p').css('color', '');
+    });
+
     function flipTitle0(card) {
         $(card).flip({axis: 'x', speed: '600'})
         $(".tab-red >" + card).on("mouseover", function() {
@@ -63,11 +73,11 @@ $(document).ready(function() {
         });
 
         $(".tab-red >" + card).on("click", function() {
-            $(card).flip(true)
+            $(card).flip(false)
         });
     }
 
     flipTitle0("#card-current");
 
     
-})
+});
