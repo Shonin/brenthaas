@@ -72,14 +72,17 @@ $(document).ready(function() {
             $(card).flip(false);
         });
 
-        $(".tab-red >" + card).on("click", function() {
+        $(".tab-red >" + card).on('flip:done',function(){
             $(card).flip(false)
-        }, 100);
+        });
     }
 
     flipTitle0("#card-current");
 
-
+// $("#card").on('flip:done',function(){
+//   $(this).doCoolFadingThings();
+//   //Disclaimer: ^This function is fake :)
+// });
     
     
 });
