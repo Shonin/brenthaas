@@ -72,7 +72,7 @@ $(document).ready(function() {
             $(card).flip(false);
         });
 
-        $(".tab-red >" + card).on('flip:done',function(){
+        $(".tab-red >" + card).on("click",function(){
             $(card).flip(false)
         });
     }
