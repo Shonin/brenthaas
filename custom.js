@@ -2,17 +2,17 @@
 
 $(document).ready(function() {
     
-    $(".tab").on("mouseover", function() {
+    $(".tab-active").on("mouseover", function() {
       $(this).css('background-image', 'url("brent_haas_files/tab_hover.png")');
       $(this).find('p').css('color', '#1B191A');
     });
     
-    $(".tab").on("mouseout", function() {
+    $(".tab-active").on("mouseout", function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
 
-    $(".tab").on("click", function() {
+    $(".tab-active").on("click", function() {
         $(this).css('background-image', '');
         $(this).find('p').css('color', '');
     });
@@ -20,7 +20,7 @@ $(document).ready(function() {
     
     
     function flipTitle(card) {
-        $(card).flip({axis: 'x', speed: '600'})
+        $(card).flip({axis: 'x', speed: '600'});
         $(".tab >" + card).on("mouseover", function() {
             $(card).flip(true)
         });
@@ -41,13 +41,26 @@ $(document).ready(function() {
     flipTitle("#card5");
     flipTitle("#card6");
     flipTitle("#card7");
-    flipTitle("#card8");
-    flipTitle("#card9");
-    flipTitle("#card10");
-    flipTitle("#card11");
+
+    
+    
+    
+    function deactivate(card) {
+        $(card).flip({axis: 'x', speed: '600'});
+    }
+    
+    deactivate("#card8");
+    deactivate("#card9");
+    deactivate("#card10");
+    deactivate("#card11");
+    
     
 
 
+    
+    
+    
+    
     $(".tab-red").on("mouseover", function() {
       $(this).css('background-image', 'url("brent_haas_files/tab-red-hover.png")');
       $(this).find('p').css('color', '#1B191A');
@@ -63,8 +76,8 @@ $(document).ready(function() {
         $(this).find('p').css('color', '');
     });
 
-    function flipTitle0(card) {
-        $(card).flip({axis: 'x', speed: '600'})
+    function flipCurrent(card) {
+        $(card).flip({axis: 'x', speed: '600'});
         $(".tab-red >" + card).on("mouseover", function() {
             $(card).flip(true)
         });
@@ -77,7 +90,7 @@ $(document).ready(function() {
         });
     }
 
-    flipTitle0("#card-current");
+    flipCurrent("#card-current");
 
 // $("#card").on('flip:done',function(){
 //   $(this).doCoolFadingThings();
